@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.snowman {
+    font-size: 100px;
+    margin: 10px 0;
+}
+
+.chat {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#chat-box {
+    height: 200px;
+    overflow-y: auto;
+    text-align: left;
+    font-size: 14px;
+}
+
+.bot {
+    margin: 5px 0;
+    color: #aeeaff;
+}
+
+.user {
+    margin: 5px 0;
+    color: #fff;
+}
+
+.input-area {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
