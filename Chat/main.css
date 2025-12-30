@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#0f2027, #203a43, #2c5364);
+    color: white;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.snowman {
+    font-size: 90px;
+    margin: 10px 0;
+    animation: breathe 2s infinite ease-in-out;
+    cursor: pointer;
+}
+
+@keyframes breathe {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.talk {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    100% { transform: rotate(0); }
+}
+
+.chat {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#chat-box {
+    height: 180px;
+    overflow-y: auto;
+    text-align: left;
+    font-size: 14px;
+}
+
+.bot {
+    color: #aeeaff;
+    margin: 5px 0;
+}
+
+.user {
+    color: #fff;
+    margin: 5px 0;
+}
+
+.input-area {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.snowman-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.speech {
+    position: absolute;
+    background: white;
+    color: black;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: 0.25s;
+    pointer-events: none;
+}
+
+.speech::after {
+    content: "";
+    position: absolute;
+    border: 6px solid transparent;
+}
+
+.speech.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* ❄️ ZĂPADĂ */
+#snow-container {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: white;
+    opacity: 0.8;
+    will-change: transform;
+}

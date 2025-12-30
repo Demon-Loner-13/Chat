@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Omul de zăpadă de Anul Nou</title>
+    <link rel="icon" href="main.png">
+    <link rel="stylesheet" href="main.css">
+
+    <meta name="description" content="Om de zăpadă interactiv de Anul Nou. Vorbește cu el și bucură-te de atmosferă.">
+</head>
+<body>
+
+<div id="snow-container"></div>
+
+<div class="container">
+    <h1>❄️ Omul de zăpadă</h1>
+
+<div class="snowman-wrapper">
+    <div class="snowman" id="snowman">☃️</div>
+    <div class="speech" id="speech">☃️ Hey!</div>
+</div>
+
+
+
+    <div class="chat">
+        <div id="chat-box">
+            <div class="bot">Omul de zăpadă: Salut! Hai să vorbim 🎄</div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Scrie...">
+            <button id="send-btn">Trimite</button>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button onclick="quickQuestion('Ce faci?')">Ce faci?</button>
+        <button onclick="quickQuestion('Când este Anul Nou?')">Când este Anul Nou?</button>
+        <button onclick="quickQuestion('Ai o urare?')">Urare</button>
+    </div>
+</div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
