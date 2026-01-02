@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="ico.png">
+    <title>Student Chat</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div class="chat-container">
+    <div class="character" id="character">🧑‍🎓</div>
+
+    <div class="chat" id="chat"></div>
+
+    <div class="buttons">
+        <button onclick="sendPreset('profesie')">Ce profesie vrei să obțini?</button>
+        <button onclick="sendPreset('universitate')">Unde înveți?</button>
+        <button onclick="sendPreset('ce faci')">Ce faci?</button>
+    </div>
+
+    <div class="input-area">
+        <input type="text" id="userInput" placeholder="Scrie aici..." autocomplete="off">
+        <button onclick="sendMessage()">Trimite</button>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
